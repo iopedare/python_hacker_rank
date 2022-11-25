@@ -28,12 +28,11 @@ def is_leap(year):
     
     # Write your logic here
     if year % 4 == 0:
-        print(True)
-    elif year % 100 == 1:
-        print(False)
-    elif year % 400 == 0:
-        print(True)
-    
+        leap = True
+    if year % 100 == 0:
+        leap = False
+    if year % 400 == 0:
+        leap = True
     return leap
 
 year = int(input())
